@@ -71,6 +71,13 @@ form input[type=text],input[type=email]{
     border-radius: 10px;
     border: 1px solid var(--Medium--Grey);
     padding-left: 15px;
+    outline: 0;
+    font-size: 16px;
+    color: var(--Dark-Grey);
+}
+
+input[type=text]:focus,input[type=email]:focus{
+    border: 2px solid var(--Green);
 }
 
 .form-name-container, .type-content{
@@ -98,6 +105,13 @@ legend.form-query-type{
     margin-bottom: 10px;
 }
 
+.query-type-wraper input[type="radio"]{
+    width: 20px;
+    height: 20px;
+    display: block;
+    cursor: pointer;
+  }
+
 .query-type-wraper{
     width: 49%;
     height: 40px;
@@ -107,14 +121,15 @@ legend.form-query-type{
     align-items: center;
     justify-content: start;
     padding-left: 20px;
-    cursor: pointer;
 }
 
-.query-type-wraper > input[type=radio]{
+.query-type-wraper .radio-mark{
+    display: none;
     width: 20px;
     height: 20px;
-    cursor: pointer;
-}
+    background: url('/images/icon-radio-selected.svg') no-repeat center center;
+    background-size: contain;
+  }
 
 .query-type-wraper > label{
     font-size: 17px;
@@ -131,9 +146,16 @@ legend.form-query-type{
     width: 100%;
     height: 130px;
     border-radius: 10px;
-    resize: vertical;
+    resize:none;
     border: 1px solid var(--Medium--Grey);
     padding: 15px;
+    font-size: 16px;
+    color: var(--Dark-Grey);
+    outline: 0;
+}
+
+.form-message textarea:focus{
+    border: 2px solid var(--Green);
 }
 
 .form-chekbox{

@@ -51,14 +51,16 @@
 
             <div class="type-content">
 
-              <div class="query-type-wraper">
-                <input type="radio" name="radio-query-type" required>
-                <label for="first-Type">General Enquiry</label>
+              <div class="query-type-wraper" id="query-first">
+                <input type="radio" id="first-type" name="radio-query-type" required>
+                <span class="radio-mark"></span>
+                <label for="first-type">General Enquiry</label>
               </div>
     
-              <div class="query-type-wraper">
-                <input type="radio" name="radio-query-type" required>
-                <label for="last-Type">Support Request</label>
+              <div class="query-type-wraper" id="query-last">
+                <input type="radio" id="last-type" name="radio-query-type" required>
+                <span class="radio-mark"></span>
+                <label for="last-type">Support Request</label>
               </div>
 
             </div>
@@ -71,14 +73,14 @@
 
         <div class="form-message">
           <label for="message">Message <span>*</span></label>
-          <textarea name="message-area" id="message-area"></textarea>
+          <textarea name="message-area" id="message-area" required></textarea>
           <p class="message-error">This field is required</p>
         </div>
 
         <div class="form-chekbox">
           <div class="checkbox-content">
-            <input type="checkbox">
-            <label for="message">I consent to being contacted by the team</label>
+            <input type="checkbox" required>
+            <label for="message">I consent to being contacted by the team<span>*</span></label>
           </div>
           <p class="message-error">To submit this form, please consent to being contacted</p>
         </div>
@@ -97,5 +99,8 @@
 
   </main>
   
+  <script src="js/jquery-3.7.1.js"></script>
+  <script src="js/functions.js"></script>
+
 </body>
 </html>
