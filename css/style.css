@@ -223,9 +223,10 @@ legend.form-query-type{
     margin-bottom: 20px;
 }
 
-.message-success header p{
+.message-success header h2{
     margin-left: 10px;
     font-weight: var(--Bold-font);
+    font-size: 1rem;
 }
 
 .progress-bar{

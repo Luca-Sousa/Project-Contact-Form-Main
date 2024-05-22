@@ -7,7 +7,7 @@ $(function(){
     });
 
     // Função para lidar com o evento de clique nos inputs de rádio vazios
-    $(".query-type-wraper input[type=radio]:not(:checked)").click(function(){
+    $(".query-type-wraper input[name=radio-query-type]:not(:checked)").click(function(){
         var $wrapper = $(this).closest(".query-type-wraper");
         handleRadioClick($wrapper);
     });
@@ -63,7 +63,7 @@ $(function(){
         var lastName = $('input[name=lastName]').val();
         var email = $('input[name=email]').val();
         var message = $('textarea[name=message-area]').val();
-        var query_type = $('input[type=radio]:checked').val();
+        var query_type = $('input[name=radio-query-type]:checked').val();
         var checkbox = $('input[name=checkbox]:checked').val();
 
         // Variáveis de validação
