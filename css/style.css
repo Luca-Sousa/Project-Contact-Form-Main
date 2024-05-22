@@ -244,3 +244,36 @@ legend.form-query-type{
     background-color: var(--Medium--Grey);
     transition: width 3s linear;
 }
+
+@media screen and (max-width:540px){
+
+    body{
+        justify-content: start;
+        margin: 50px 0;
+    }
+
+    form {
+        padding: 25px;
+    }
+
+    .form-name-container, .type-content{
+        flex-direction: column;
+    }
+
+    .form-name-wraper{
+        width: 100%;
+    }
+
+    .query-type-wraper{
+        width: 100%;
+    }
+
+    .query-type-left{
+        margin-bottom: 20px;
+    }
+
+    .message-success {
+        width: 90%;
+    }
+
+}
