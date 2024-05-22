@@ -45,7 +45,7 @@ $(function(){
     });
 
     // Esconder mensagem de erro quando um rádio é selecionado
-    $('input[name=radio-query-type]').click(function(){
+    $('input[type=radio]').click(function(){
         $(".form-type-container p").hide();
     });
 
@@ -63,7 +63,7 @@ $(function(){
         var lastName = $('input[name=lastName]').val();
         var email = $('input[name=email]').val();
         var message = $('textarea[name=message-area]').val();
-        var query_type = $('input[name=radio-query-type]:checked').val();
+        var query_type = $('input[type=radio]:checked').val();
         var checkbox = $('input[name=checkbox]:checked').val();
 
         // Variáveis de validação
