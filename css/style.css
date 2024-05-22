@@ -23,6 +23,7 @@ body{
     min-height: 100vh;
     font-family: 'Karla';
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: var(--Light-Green);
@@ -129,7 +130,7 @@ legend.form-query-type{
     height: 20px;
     background: url('/images/icon-radio-selected.svg') no-repeat center center;
     background-size: contain;
-  }
+}
 
 .query-type-wraper > label{
     font-size: 17px;
@@ -169,6 +170,15 @@ legend.form-query-type{
     cursor: pointer;
 }
 
+.form-chekbox .checkbox-mark{
+    display: none;
+    width: 15px;
+    height: 15px;
+    margin-right: 15px;
+    background: url('/images/icon-checkbox-check.svg') no-repeat center center;
+    background-size: contain;
+}
+
 .checkbox-content{
     display: flex;
     align-items: center;
@@ -178,7 +188,7 @@ legend.form-query-type{
     margin-bottom: 0px;
 }
 
-.form-button-submit button{
+.form-input-submit input[type=submit]{
     width: 100%;
     height: 50px;
     font-size: 16px;
@@ -188,4 +198,49 @@ legend.form-query-type{
     border: none;
     border-radius: 10px;
     cursor: pointer;
+}
+
+.form-input-submit input[type=submit]:hover{
+    background-color: var(--Dark-Grey);
+}
+
+.message-success {
+    display: none;
+    background-color: var(--Dark-Grey);
+    color: var(--White);
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.message-success > p {
+    color: var(--Medium--Grey);
+}
+
+.message-success header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.message-success header p {
+    margin-left: 10px;
+    font-weight: var(--Bold-font);
+}
+
+.progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background-color: var(--White);
+    border-radius: 0 0 10px 10px;
+}
+
+.progress-bar .progress {
+    width: 0;
+    height: 100%;
+    background-color: var(--Medium--Grey);
+    transition: width 3s linear;
 }

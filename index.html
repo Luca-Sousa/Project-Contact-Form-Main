@@ -13,6 +13,17 @@
 </head>
 <body>
 
+  <Section class="message-success">
+      <header>
+        <img src="images/icon-success-check.svg" alt="">
+        <p>Message Sent!</p>
+      </header>
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+      <div class="progress-bar">
+        <div class="progress"></div>
+      </div>
+  </Section>
+
   <main>
 
     <form>
@@ -25,22 +36,25 @@
           
           <div class="form-name-wraper">
             <label for="first-name">First Name <span>*</span></label>
-            <input type="text" name="firstName" required>
-            <p class="message-error">This field is required</p>
+            <input type="text" name="firstName">
+            <p class="message-error error-first-name">This field is required</p>
+            <p class="message-error invalid-first-name">Please enter only the valid first name</p>
           </div>
 
           <div class="form-name-wraper">
             <label for="last-name">Last Name <span>*</span></label>
-            <input type="text" name="lastName" required>
-            <p class="message-error">This field is required</p>
+            <input type="text" name="lastName">
+            <p class="message-error error-last-name">This field is required</p>
+            <p class="message-error invalid-last-name">Please enter only the valid last name</p>
           </div>
 
         </div>
 
-        <div class="form-email">
+        <div class="form-email" id="email">
           <label for="email">Email Address <span>*</span></label>
-          <input type="email" name="email" required>
-          <p class="message-error">Please enter a valid email address</p>
+          <input type="email" name="email">
+          <p class="message-error error-email">This field is required</p>
+          <p class="message-error invalid-email">Please enter a valid email address</p>
         </div>
 
         <div class="form-type-container">
@@ -51,21 +65,21 @@
 
             <div class="type-content">
 
-              <div class="query-type-wraper" id="query-first">
-                <input type="radio" id="first-type" name="radio-query-type" required>
+              <div class="query-type-wraper">
+                <input type="radio" id="first-type" name="radio-query-type">
                 <span class="radio-mark"></span>
                 <label for="first-type">General Enquiry</label>
               </div>
     
-              <div class="query-type-wraper" id="query-last">
-                <input type="radio" id="last-type" name="radio-query-type" required>
+              <div class="query-type-wraper">
+                <input type="radio" id="last-type" name="radio-query-type">
                 <span class="radio-mark"></span>
                 <label for="last-type">Support Request</label>
               </div>
 
             </div>
 
-            <p class="message-error">Please select a query type</p>
+            <p class="message-error error-query-type">Please select a query type</p>
 
           </fieldset>
 
@@ -73,25 +87,22 @@
 
         <div class="form-message">
           <label for="message">Message <span>*</span></label>
-          <textarea name="message-area" id="message-area" required></textarea>
-          <p class="message-error">This field is required</p>
+          <textarea name="message-area" id="message-area"></textarea>
+          <p class="message-error error-message">This field is required</p>
         </div>
 
         <div class="form-chekbox">
           <div class="checkbox-content">
-            <input type="checkbox" required>
+            <input type="checkbox" name="checkbox">
+            <span class="checkbox-mark"></span>
             <label for="message">I consent to being contacted by the team<span>*</span></label>
           </div>
-          <p class="message-error">To submit this form, please consent to being contacted</p>
+          <p class="message-error error-checkbox">To submit this form, please consent to being contacted</p>
         </div>
 
-
-        <div class="form-button-submit">
-          <button type="submit">Submit</button>
+        <div class="form-input-submit">
+          <input type="submit" value="Submit" name="submit">
         </div>
-
-        <!-- Message Sent!
-        Thanks for completing the form. We'll be in touch soon! -->
 
       </fieldset>
 
