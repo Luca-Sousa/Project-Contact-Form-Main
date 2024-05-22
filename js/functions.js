@@ -151,6 +151,7 @@ $(function(){
     function resetInvalidField(el){
         el.css('border', '1px solid var(--Medium--Grey)');
         el.css('background-color', 'var(--white)');
+        el.val('');
         $(el).parent().find('p').hide();
     }
 

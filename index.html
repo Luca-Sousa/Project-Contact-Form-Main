@@ -35,15 +35,15 @@
         <div class="form-name-container">
           
           <div class="form-name-wraper">
-            <label for="first-name">First Name <span>*</span></label>
-            <input type="text" name="firstName">
+            <label for="firstName">First Name <span>*</span></label>
+            <input type="text" name="firstName" id="firstName">
             <p class="message-error error-first-name">This field is required</p>
             <p class="message-error invalid-first-name">Please enter only the valid first name</p>
           </div>
 
           <div class="form-name-wraper">
-            <label for="last-name">Last Name <span>*</span></label>
-            <input type="text" name="lastName">
+            <label for="lastName">Last Name <span>*</span></label>
+            <input type="text" name="lastName" id="lastName">
             <p class="message-error error-last-name">This field is required</p>
             <p class="message-error invalid-last-name">Please enter only the valid last name</p>
           </div>
@@ -52,7 +52,7 @@
 
         <div class="form-email" id="email">
           <label for="email">Email Address <span>*</span></label>
-          <input type="email" name="email">
+          <input type="email" name="email" id="email">
           <p class="message-error error-email">This field is required</p>
           <p class="message-error invalid-email">Please enter a valid email address</p>
         </div>
@@ -66,15 +66,15 @@
             <div class="type-content">
 
               <div class="query-type-wraper query-type-left">
-                <input type="radio" id="first-type" name="radio-query-type">
+                <input type="radio" id="radio-query-type" name="radio-query-type">
                 <span class="radio-mark"></span>
-                <label for="first-type">General Enquiry</label>
+                <label for="radio-query-type">General Enquiry</label>
               </div>
     
               <div class="query-type-wraper query-type-right">
-                <input type="radio" id="last-type" name="radio-query-type">
+                <input type="radio" id="radio-query-type" name="radio-query-type">
                 <span class="radio-mark"></span>
-                <label for="last-type">Support Request</label>
+                <label for="radio-query-type">Support Request</label>
               </div>
 
             </div>
@@ -86,16 +86,16 @@
         </div>
 
         <div class="form-message">
-          <label for="message">Message <span>*</span></label>
+          <label for="message-area">Message <span>*</span></label>
           <textarea name="message-area" id="message-area"></textarea>
           <p class="message-error error-message">This field is required</p>
         </div>
 
         <div class="form-chekbox">
           <div class="checkbox-content">
-            <input type="checkbox" name="checkbox">
+            <input type="checkbox" name="checkbox" id="checkbox">
             <span class="checkbox-mark"></span>
-            <label for="message">I consent to being contacted by the team<span>*</span></label>
+            <label for="checkbox">I consent to being contacted by the team<span>*</span></label>
           </div>
           <p class="message-error error-checkbox">To submit this form, please consent to being contacted</p>
         </div>
